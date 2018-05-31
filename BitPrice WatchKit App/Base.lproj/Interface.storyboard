@@ -15,14 +15,20 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BitPrice_WatchKit_App" customModuleProvider="target">
                     <items>
                         <imageView width="0.55000000000000004" height="0.59999999999999998" alignment="center" image="bitCoin" contentMode="scaleAspectFit" id="FAo-HS-yQC"/>
-                        <label alignment="center" text="$ 521.23" minimumScaleFactor="0.69999999999999996" id="Cha-4W-WcC">
-                            <fontDescription key="font" type="boldSystem" pointSize="34"/>
+                        <label alignment="center" text=" " minimumScaleFactor="0.20000000000000001" id="Cha-4W-WcC">
+                            <fontDescription key="font" type="boldSystem" pointSize="32"/>
                         </label>
                         <label alignment="center" text="Updating" id="52B-CT-eoS">
                             <fontDescription key="font" type="system" pointSize="14"/>
                         </label>
-                        <separator alignment="left" id="ysN-Wa-C6I"/>
+                        <separator alignment="left" id="ysN-Wa-C6I">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
                     </items>
+                    <connections>
+                        <outlet property="bitcoinPriceLabel" destination="Cha-4W-WcC" id="e5A-sa-T6I"/>
+                        <outlet property="updatingLabel" destination="52B-CT-eoS" id="8fv-sB-TEg"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>
