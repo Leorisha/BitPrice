@@ -1,14 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BitPrice_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="0.55000000000000004" height="0.59999999999999998" alignment="center" image="bitCoin" contentMode="scaleAspectFit" id="FAo-HS-yQC"/>
+                        <label alignment="center" text="$ 521.23" minimumScaleFactor="0.69999999999999996" id="Cha-4W-WcC">
+                            <fontDescription key="font" type="boldSystem" pointSize="34"/>
+                        </label>
+                        <label alignment="center" text="Updating" id="52B-CT-eoS">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <separator alignment="left" id="ysN-Wa-C6I"/>
+                    </items>
+                </controller>
             </objects>
         </scene>
     </scenes>
