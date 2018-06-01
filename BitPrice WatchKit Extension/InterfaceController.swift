@@ -56,6 +56,12 @@ class InterfaceController: WKInterfaceController {
                 bitcoinPriceLabel.setText(formatPrice(of: rate))
                 updatingLabel.setText("Updated")
                 UserDefaults.standard.set(rate, forKey: "bitcoinPrice")
+                
+                if let complications = CLKComplicationServer.sharedInstance().activeComplications {
+                    for complication in complications  {
+                        CLKComplicationServer.sharedInstance().reloadTimeline(for: complication)
+                    }
+                }
             }
         } catch {}
     }
